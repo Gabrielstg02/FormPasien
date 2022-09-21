@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+*, html {
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+}
+
+body {
+    background-color: black;
+    height: 100%;
+}
+
+.container {
+    margin: auto;
+    width: 40%;
+    padding: 10px;
+}
+
+.wrapper {
+    margin: auto;
+    width: 40%;
+    padding: 10px;
+}
+
+.judul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    font-family: Helvetica;
+}
+
+.subjudul {
+    font-weight: lighter;
+}
+
+img {
+    width: 100px;
+}
+
+.img-left {
+    float: left;
+}
+
+.img-right {
+    float: right;
+}
+
+.font {
+    font-size: 30px;
+}
+
+.font2 {
+    font-size: 30px;
+}
+
+li-li {
+    font-size: 30px;
+}
+
+section{
+    width: 100%;
+}
+form{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-bottom: dashed black;
+}
+
+#sub {
+    float: right;
+}
+
+.title{
+    display :flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.input-container{
+    margin-bottom: 10px;
+}
+.input-wrapper{
+    display: flex;
+    flex-direction: row;
+}
+.input-wrapper label{
+    margin-right: 10px;
+    width: 200px;
+}
+.input-wrapper input{
+    border: none;
+    display: block;
+    margin-left: 10px;
+    border-bottom: 2px dotted black;
+}
+.input-wrapper input:focus{
+    outline: none;
+}
+.list{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.left{
+    margin-right: 30px;
+}
+.left p{
+    font-size: 12px;
+}
+.right{
+    width: 70%;
+}
+.right ol li{
+    font-size: 12px;
+}
+.ket p{
+    font-size: 12px;
+}
+.tanggal{
+    margin-top: 50px;
+    margin-bottom: -90px;
+    width: 100%;
+    text-align: right;
+}
+.signature{
+    margin: 0 auto;
+    width: 360px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.sig-left{
+    height: 100px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.sig-right{
+    overflow: hidden;
+    margin-right: -30px;
+    height: 100px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
