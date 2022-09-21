@@ -9,139 +9,175 @@
 </head>
 <body>
     <div class="container">
-        <div class="img-right">
-            <img src="assets/arosuka.png" alt="" style="width:10em; height:10em;">
-        </div>
-        <div class="img-left">
-            <img src="assets/lambang.png" alt="">
-        </div>
-        <h1  class="judul">PEMERINTAH KABUPATEN SOLOK</h1>
-        <h1  class="judul">RUMAH SAKIT UMUM DAERAH AROSUKA</h1>
-        <h3  class="judul">Jl. Raya Solok Padang KM. 20 Arosuka Kode Pos 27364</h3>
-        <h3  class="judul">Propinsi Sumatera Barat Telp. / Fax (0755) 31160</h3>
-        <h3  class="judul">Email : rsudarosukakabsolok@gmail.com</h3>
-    </div>
-    <div class="wrapper font">
-        <form id ="form">
-            <div class="title">
-                <h2>FORMULIR PENDAFTARAN PASIEN BARU</h2>
+        <div class="box" id="box">
+            <div class="image" id="image">
+                <img src="assets/lambang.png" alt="" style="width: 7em;">
             </div>
-            <h3>I.IDENTITAS PASIEN</h3>
-            <div class="input-container">
-                <div class="input-wrapper">
-                    <label for="name">Nama Peserta</label>
-                    <input id="name" type="text" required>
-                </div>
-                <div class="input-wrapper">
-                    <label for="tl">Tempat Lahir</label>
-                    <input id="tl" type="text" required>
-                </div>
-                <div class="input-wrapper">
-                    <label for="tgl">Tanggal Lahir</label>
-                    <input id="tgl" type="date" required>
-                </div>
-                <div class="input-wrapper">
-                    <label for="jk">Jenis Kelamin</label>
-                    <input id="jk" type="text" required>
-                </div>
-                <div class="input-wrapper">
-                    <label for="alamat">Alamat</label>
-                    <input id="alamat" type="text" required>
-                </div>
-                <div class="input-wrapper">
-                    <label for="alamat"></label>
-                    <input class="alamat2" id="alamat" type="text" required>
-                </div>
-                <div class="input-wrapper">
-                    <label for="rt">RT</label>
-                    <input class="rt" type="text" required>
-                </div>
-                <div class="input-wrapper">
-                    <label for="rw">RW</label>
-                    <input class="rw" type="text" required>
-                </div>
-                <div class="input-wrapper">
-                    <label for="provinsi">Provinsi</label>
-                    <input class="provinsi" type="text" required>
-                </div>
-                <div class="input-wrapper">
-                    <label for="kecamatan">Kecamatan</label>
-                    <input class="kecamatan" type="text" required>
-                </div>
-                <div class="input-wrapper">
-                    <label for="desa">Kelurahan/Desa</label>
-                    <input class="desa" type="text" required>
-                </div>
-                <div class="input-wrapper">
-                    <label for="hp">No.Tel/HP</label>
-                    <input class="hp" type="number" required>
-                </div>
-                <div class="input-wrapper">
-                    <label for="kodepos">Kode Pos</label>
-                    <input id="kodepos" type="number" required>
-                </div>
+            <div class="judul" id="judul">
+                <h1>PEMERINTAH KABUPATEN SOLOK</h1>
+                <h1>RUMAH SAKIT UMUM DAERAH AROSUKA</h1>
+                <h3>Jl. Raya Solok Padang KM. 20 Arosuka Kode Pos 27364</h3>
+                <h3>Propinsi Sumatera Barat Telp. / Fax (0755) 31160</h3>
+                <h3>Email : rsudarosukakabsolok@gmail.com</h3>
             </div>
+    
+            <div class="image" id="image2">
+                <img src="assets/arosuka.png" alt="" style="width: 8em;">
+            </div>
+        </div>
 
-            <div class="list">
-                <div class="left">
-                    <div>Agama:</div>
+        <div class="line"></div>
+
+        <div class="subjudul">
+            <h1>FORMULIR PENDAFTARAN PASIEN BARU</h1>
+        </div>
+        <div class="subjudul2">
+            <h3>PERHATIAN: HARAP MENGISI FORMULIR INI DENGAN LENGKAP DAN JELAS</h3>
+        </div>
+
+        <div class="wrapper">
+            <form class="form" id="form">
+                <div class="subjudul3">
+                    <h3>I.IDENTITAS PASIEN</h3>
                 </div>
-                <div class="right">
-                    <ol>
-                        <li><input type="radio" name="Agama" >Islam</input></li>
-                        <li><input type="radio" name="Agama" >Kristen</input></li>
-                        <li><input type="radio" name="Agama" >Katolik</input></li>
-                        <li><input type="radio" name="Agama" >Buddha</input></li>
-                        <li><input type="radio" name="Agama" >Hindu</input></li>
-                        <li><input type="radio" name="Agama" >Konghucu</input></li>
-                    </ol>
+
+                <div class="input-container">
+                    <div class="input-wrapper">
+                        <label for="name">Nama Peserta</label>
+                        <input class="nama" id="name" type="text" required>
+                        <p id="nameWarn" class="warn">Belum terisi</p>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="tl">Tempat Lahir</label>
+                        <input class="tl" id="tl" type="text" required>
+                        <p id="tlWarn" class="warn">Belum terisi</p>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="tgl">Tanggal Lahir</label>
+                        <input class="tgl" id="tgl" type="date" required>
+                        <p id="tglWarn" class="warn">Belum terisi</p>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="jk">Jenis Kelamin</label>
+                        <input class="jk" id="jk" type="text" required>
+                        <p id="jkWarn" class="warn">Belum terisi</p>
+                    </div>
+                </div>
+            </form>
+            <form class="form2" >
+                <div class="other-form">
+                    <div class="input-wrapper3">
+                        <label for="alamat">Alamat</label>
+                        <input class="alamat" id="alamat" type="text" required>
+                        <p id="alamatWarn" class="warn">Belum terisi</p>
+                    </div>
+                    <div class="input-wrapper2 input-wrapper-form1">
+                        <label for="rt">RT</label>
+                        <input class="rt" id="rt" type="number" required>
+                        <p id="rtWarn" class="warn">Belum terisi</p>
+                    </div>
+                    <div class="input-wrapper2 input-wrapper2-form2">
+                        <label for="rw">RW</label>
+                        <input class="rw" id="rw" type="number" required>
+                        <p id="rwWarn" class="warn">Belum terisi</p>
+                    </div>
+                </div>
+            </form>
+
+            <form class="form" id="form3">
+                <div class="input-container">
+                    <div class="input-wrapper">
+                        <label for="provinsi">Provinsi</label>
+                        <input class="provinsi" id="provinsi" type="text" required>
+                        <p id="provinsiWarn" class="warn">Belum terisi</p>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="kecamatan">Kecamatan</label>
+                        <input class="kecamatan" id="kecamatan" type="text" required>
+                        <p id="kecamatanWarn" class="warn">Belum terisi</p>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="desa">Kelurahan/Desa</label>
+                        <input class="desa" id="desa" type="text" required>
+                        <p id="desaWarn" class="warn">Belum terisi</p>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="hp">No.Tel/HP</label>
+                        <input class="hp" id="hp" type="number" required>
+                        <p id="hpWarn" class="warn">Belum terisi</p>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="kodepos">Kode Pos</label>
+                        <input class="kodepos" id="kodepos" type="number" required>
+                        <p id="kodePosWarn" class="warn">Belum terisi</p>
+                    </div>
+                </div>
+            </form>
+
+            <div class="form-list">
+                <div class="religion">
+                    <p class="txt" id="agama">Agama</p>
+                    <label class="religion-label"><input type="radio" name="optradio">Islam</label>
+                    <label class="religion-label"><input type="radio" name="optradio">Kristen</label>
+                    <label class="religion-label"><input type="radio" name="optradio">Katolik</label>
+                    <label class="religion-label"><input type="radio" name="optradio">Buddha</label>
+                    <label class="religion-label"><input type="radio" name="optradio">Hindu</label>
+                    <label class="religion-label"><input type="radio" name="optradio">Konghucu</label>
+                    <label class="religion-label label-wrapper">Lainnya<input type="text" name="optradio"></label>
+                    <p id="agamaWarn" class="warn">Belum terisi</p>
                 </div>
             </div>
+            
+            <form class="form" id="form4">
                 <div class="input-wrapper">
                     <label for="pendidikan">Pendidikan Terakhir</label>
                     <input id="pendidikan" type="text" required>
+                    <p id="pendidikanWarn" class="warn">Belum terisi</p>
                 </div>
                 <div class="input-wrapper">
                     <label for="pekerjaan">Pekerjaan</label>
                     <input id="pekerjaan" type="text" required>
+                    <p id="pekerjaanWarn" class="warn">Belum terisi</p>
                 </div>
-            <div>
+            </form>
 
             <div class="font2">
-                <h2>
-                    <div>II. PENANGGUNG JAWAB PASIEN</div> 
-                </h2>
-                <div class="input-wrapper">
-                    <label for="pekerjaan">Hubungan Dengan Pasien</label>
-                    <input id="pekerjaan" type="text" required>
+                <div class="subjudul3">
+                    <h3>II. PENANGGUNG JAWAB PASIEN</h3>
                 </div>
                 <div class="input-wrapper">
-                    <label for="pekerjaan">Nama Penanggung Jawab</label>
-                    <input id="pekerjaan" type="text" required>
+                    <label for="relasipj">Hubungan Dengan Pasien</label>
+                    <input id="relasipj" type="text" required>
+                    <p id="relasiPjWarn" class="warn">Belum terisi</p>
                 </div>
                 <div class="input-wrapper">
-                    <label for="pekerjaan">Pendidikan P.Jawab</label>
-                    <input id="pekerjaan" type="text" required>
+                    <label for="namapj">Nama Penanggung Jawab</label>
+                    <input id="namapj" type="text" required>
+                    <p id="namaPjWarn" class="warn">Belum terisi</p>
                 </div>
                 <div class="input-wrapper">
-                    <label for="pekerjaan">Pekerjaan P.Jawab</label>
-                    <input id="pekerjaan" type="text" required>
+                    <label for="pendidikanpj">Pendidikan P.Jawab</label>
+                    <input id="pendidikanpj" type="text" required>
+                    <p id="pendidikanPjWarn" class="warn">Belum terisi</p>
+                </div>
+                <div class="input-wrapper">
+                    <label for="pekerjaanpj">Pekerjaan P.Jawab</label>
+                    <input id="pekerjaanpj" type="text" required>
+                    <p id="pekerjaanPjWarn" class="warn">Belum terisi</p>
                 </div>
             </div>
             <div class="signature">
-                <div class="sig-left">
-                    <p></p>
-                </div>
-                <div class="sig-right">
+                <div class="form sig-right">
                     <p>Tanda Tangan</p>
-                    <input type="file" required>
+                    <input id="ttd" type="file" required>
+                    <p id="ttdPjWarn" class="warn">Belum terisi</p>
                 </div>
             </div>
-            <div class="submit-wrapper">
-                <input id="sub" type="submit" onclick="submit()">
+            <div>
+                <button onclick="submit()" id="submit" class="submit">Kirim</button>
             </div>
-        </form>
+        </div>
     </div>
-
+    <script type="application/javascript" src="main.js"></script>
 </body>
 </html>

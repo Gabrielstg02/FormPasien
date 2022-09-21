@@ -1,25 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 *, html {
-    margin: 0px;
-    padding: 0px;
-    background-color: white;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    background-color: black;
-    height: 100%;
+    background-color: #D4CAA3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    font-family: Helvetica;
 }
 
 .container {
-    margin: auto;
-    width: 40%;
-    padding: 10px;
+    background-color: white;
 }
 
-.wrapper {
-    margin: auto;
-    width: 40%;
-    padding: 10px;
+.box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .judul {
@@ -27,128 +28,184 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-weight: bolder;
-    font-family: Helvetica;
+}
+
+.warn {
+    margin-bottom: 0px;
+    font-family: monospace;
+    font-size: large;
+    color: red;
+    font-weight: bold;
+}
+
+.line {
+    display: flex;
+    height: 5px;
+    background-color: black;
+    width: 100%;
+    margin: auto;
 }
 
 .subjudul {
-    font-weight: lighter;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
 }
 
-img {
-    width: 100px;
+.subjudul2 {
+    text-decoration: underline;
+    margin: 5px;
 }
 
-.img-left {
-    float: left;
-}
-
-.img-right {
-    float: right;
-}
-
-.font {
-    font-size: 30px;
-}
-
-.font2 {
-    font-size: 30px;
-}
-
-li-li {
-    font-size: 30px;
-}
-
-section{
-    width: 100%;
-}
-form{
+.form {
     padding: 10px;
     display: flex;
     flex-direction: column;
     border: none;
-    border-bottom: dashed black;
 }
 
-#sub {
-    float: right;
+.subjudul3 {
+    font-weight: bold;
+    margin: 5px;
 }
 
-.title{
-    display :flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
-}
-.input-container{
-    margin-bottom: 10px;
-}
-.input-wrapper{
+.input-wrapper {
+    padding: 10px;
     display: flex;
     flex-direction: row;
 }
-.input-wrapper label{
+
+.input-wrapper label {
     margin-right: 10px;
+    padding: 5px;
     width: 200px;
 }
-.input-wrapper input{
+
+.input-wrapper input {
     border: none;
     display: block;
     margin-left: 10px;
     border-bottom: 2px dotted black;
+    font-size: 17px;
+    width: 700px;
 }
+
 .input-wrapper input:focus{
     outline: none;
 }
-.list{
-    width: 100%;
+
+.form2 {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    border: none;
+}
+
+.other-form {
     display: flex;
     flex-direction: row;
 }
-.left{
-    margin-right: 30px;
+
+.input-wrapper2 {
+    padding: 10px;
+    display: flex;
 }
-.left p{
-    font-size: 12px;
+
+.input-wrapper2 label {
+    margin-right: 10px;
+    padding: 5px;
 }
-.right{
-    width: 70%;
+
+.input-wrapper2 input {
+    border: none;
+    display: block;
+    margin-left: 10px;
+    border-bottom: 2px dotted black;
+    font-size: 17px;
+    width: 45px;
 }
-.right ol li{
-    font-size: 12px;
+
+.input-wrapper2 input:focus{
+    outline: none;
 }
-.ket p{
-    font-size: 12px;
+
+.input-wrapper3 {
+    padding: 10px;
+    display: flex;
 }
-.tanggal{
-    margin-top: 50px;
-    margin-bottom: -90px;
-    width: 100%;
-    text-align: right;
+
+.input-wrapper3 label {
+    margin-right: 10px;
+    padding: 5px;
+    width: 200px;
 }
-.signature{
-    margin: 0 auto;
-    width: 360px;
-    height: 200px;
+
+.input-wrapper3 input {
+    border: none;
+    display: block;
+    margin-left: 10px;
+    border-bottom: 2px dotted black;
+    font-size: 17px;
+    width: 460px;
+}
+
+.input-wrapper3 input:focus{
+    outline: none;
+}
+
+.choice {
+    padding: 10px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
 }
-.sig-left{
-    height: 100px;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+
+.form-list {
+    padding: 10px;
 }
-.sig-right{
-    overflow: hidden;
-    margin-right: -30px;
-    height: 100px;
-    width: 50%;
+
+.religion {
+    margin-left: 5px;
+    padding: 10px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.txt {
+    margin-right: 170px;
+}
+
+.religion-label {
+    margin-right: 24px;
+}
+
+.label-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.label-wrapper input {
+    border: none;
+    display: block;
+    margin-left: 10px;
+    border-bottom: 2px dotted black;
+    font-size: 17px;
+    width: 110px;
+}
+
+.label-wrapper input:focus{
+    outline: none;
+}
+
+.submit{
+    float: right;
+    padding: 5px;
+    margin: 50px 10px 10px 0px;
+}
+
+.sig-right {
+    margin-left: 7px;
+    float: left;
 }
